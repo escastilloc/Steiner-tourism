@@ -1,0 +1,151 @@
+h1{
+	background-color: $color-parrafo-principal;
+	color: $color-principal;
+	font-weight: bold;
+	font-size: 100px;
+	text-align: center;
+	text-transform: uppercase;	
+	word-spacing: 20px;
+	letter-spacing: 1px;
+	font-family: 'Pirata One', cursive;
+	height: 100px;
+	/*margin: 0px;*/
+
+}
+
+
+main{
+	width: 100%;
+	height: 1000px;
+	background-color: $color-parrafo-secundaria;
+	/*display: grid;*/
+}
+
+.divPadre{
+	display: grid;
+	grid-template-rows: 200px 200px 200px;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	grid-template-areas: "divHijo1 divHijo2 divHijo3";
+
+
+	/*margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: center;*/
+}
+
+.divHijo1{
+	grid-area: divHijo1;
+}
+
+.divHijo2{
+	grid-area: divHijo2;
+}
+
+.divHijo3{
+	grid-area: divHijo3;
+}
+
+
+
+h2{
+	color: #891bb3;
+	font-family: 'Rubik', sans-serif;
+
+}
+
+#itemProgramas{
+	text-align: center;
+}
+
+
+td{
+	color: purple;
+}
+
+#cajonDelMaipo{
+	width: 500px;
+	height: 400px;
+}
+
+#pucon{
+	width: 500px;
+	height: 400px;
+}
+
+#tresTazas{
+	width: 500px;
+	height: 400px;
+}
+
+
+
+p{
+	color: black;
+	font-weight: bold;
+}
+
+.parrafoDeMuestra{
+
+	line-height: 2
+}
+
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+
+}
+
+.table-responsive{
+    border: solid 3px black;
+}
+
+.table-inicio{
+	background-color: #4d6e56;
+}
+
+td{
+	color: black;
+	font-size: 20px;
+	
+}
+
+.tabla{
+	color: black;
+	font-size: 20px;
+}
+
+.barraTabla{
+	color: $color-principal;
+	font-size: 25px;
+}
+
+form{
+	width: 800px;
+}
+
+#cabalgata{
+	width: 800px;
+	height: 500px;
+}
+
+#trekking{
+	width: 800px;
+	height: 500px;
+}
+
+.fotosServicios{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.logoBar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

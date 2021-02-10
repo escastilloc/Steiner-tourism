@@ -1,0 +1,213 @@
+/*@mixin cambiarBorde($grosor, $ancho, $color, $estilo){
+	border: $grosor;
+	border-width:$ancho;
+	border-color: $color;
+	border-style: $estilo;
+
+}*/
+header {
+  width: 100%;
+  height: 500px; }
+
+.menuPadre {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: black;
+  height: 70px;
+  /*margin: 0px;*/ }
+
+.padreNavegacion {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  justify-content: space-between;
+  margin-right: 20px;
+  font-size: 30px; }
+
+.barraNavegacion {
+  background-image: url(https://www.ecochile.travel/wp-content/uploads/2017/03/1000x400-slide_banner1-A.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; }
+
+li a {
+  list-style: none;
+  font-family: 'Pirata One', cursive;
+  color: white;
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  margin-left: 20px;
+  font-family: 'Pirata One', cursive;
+  color: white;
+  text-decoration: none; }
+
+.navegacion li ul li {
+  display: none; }
+
+.navegacion li:hover ul li {
+  display: block; }
+
+.navegacion li:hover {
+  background-color: lightgreen;
+  color: green; }
+
+.navegacion li a:hover {
+  background-color: lightgreen;
+  color: green;
+  text-decoration: none; }
+
+.hijoNavegacion ul {
+  padding: 0px;
+  z-index: 1;
+  position: absolute; }
+
+#logo {
+  width: 300px; }
+
+h1 {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 20px;
+  letter-spacing: 1px;
+  font-family: 'Pirata One', cursive;
+  height: 100px;
+  /*margin: 0px;*/ }
+
+main {
+  width: 100%;
+  height: 1000px;
+  background-color: lightgreen;
+  /*display: grid;*/ }
+
+.divPadre {
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "divHijo1 divHijo2 divHijo3";
+  /*margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-items: center;*/ }
+
+.divHijo1 {
+  grid-area: divHijo1; }
+
+.divHijo2 {
+  grid-area: divHijo2; }
+
+.divHijo3 {
+  grid-area: divHijo3; }
+
+h2 {
+  color: #891bb3;
+  font-family: 'Rubik', sans-serif; }
+
+#itemProgramas {
+  text-align: center; }
+
+td {
+  color: purple; }
+
+#cajonDelMaipo {
+  width: 500px;
+  height: 400px; }
+
+#pucon {
+  width: 500px;
+  height: 400px; }
+
+#tresTazas {
+  width: 500px;
+  height: 400px; }
+
+p {
+  color: black;
+  font-weight: bold; }
+
+.parrafoDeMuestra {
+  line-height: 2; }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+.table-responsive {
+  border: solid 3px black; }
+
+.table-inicio {
+  background-color: #4d6e56; }
+
+td {
+  color: black;
+  font-size: 20px; }
+
+.tabla {
+  color: black;
+  font-size: 20px; }
+
+.barraTabla {
+  color: white;
+  font-size: 25px; }
+
+form {
+  width: 800px; }
+
+#cabalgata {
+  width: 800px;
+  height: 500px; }
+
+#trekking {
+  width: 800px;
+  height: 500px; }
+
+.fotosServicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.logoBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(to left, #4d6e56, green, #4d6e56); }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 30px;
+  height: 50px; }
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.formulario {
+  color: white; }
+
+label {
+  color: white; }
+
+.formularioContacto {
+  width: 1000px; }
+
+body {
+  width: 100%; }
+
+@media (max-width: 768px) {
+  body {
+    background-color: green; } }
