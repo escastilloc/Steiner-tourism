@@ -1,132 +1,120 @@
-/*@mixin cambiarBorde($grosor, $ancho, $color, $estilo){
-	border: $grosor;
-	border-width:$ancho;
-	border-color: $color;
-	border-style: $estilo;
+.navbar1 {
+  height: 62px; }
 
-}*/
-header {
-  width: 100%;
-  height: 500px; }
-
-.menuPadre {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: black;
-  height: 70px;
-  /*margin: 0px;*/ }
-
-.padreNavegacion {
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
-  justify-content: space-between;
-  margin-right: 20px;
-  font-size: 30px; }
-
-.barraNavegacion {
-  background-image: url(https://www.ecochile.travel/wp-content/uploads/2017/03/1000x400-slide_banner1-A.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%; }
-
-li a {
-  list-style: none;
-  font-family: 'Pirata One', cursive;
-  color: white;
-  text-decoration: none; }
-
-ul {
-  list-style: none;
-  margin-left: 20px;
-  font-family: 'Pirata One', cursive;
-  color: white;
-  text-decoration: none; }
-
-.navegacion li ul li {
-  display: none; }
-
-.navegacion li:hover ul li {
-  display: block; }
-
-.navegacion li:hover {
-  background-color: lightgreen;
-  color: green; }
-
-.navegacion li a:hover {
-  background-color: lightgreen;
-  color: green;
-  text-decoration: none; }
-
-.hijoNavegacion ul {
-  padding: 0px;
-  z-index: 1;
-  position: absolute; }
-
-#logo {
-  width: 300px; }
+.navbar2 {
+  background-color: black; }
 
 h1 {
-  background-color: green;
-  color: white;
+  background-image: linear-gradient(to left, #4d6e56, green, #4d6e56);
+  color: #DBDBDB;
   font-weight: bold;
   font-size: 100px;
   text-align: center;
   text-transform: uppercase;
   word-spacing: 20px;
   letter-spacing: 1px;
-  font-family: 'Pirata One', cursive;
-  height: 100px;
-  /*margin: 0px;*/ }
+  font-family: Lato, sans-serif;
+  height: 100px; }
 
 main {
   width: 100%;
-  height: 1000px;
-  background-color: lightgreen;
-  /*display: grid;*/ }
+  height: 1780px;
+  background-color: white; }
+
+.stein {
+  height: 1350px; }
+
+.tours {
+  height: 1720px; }
+
+.respon {
+  height: 950px; }
+
+.contac {
+  height: 810px; }
 
 .divPadre {
   display: grid;
-  grid-template-rows: 200px 200px 200px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "divHijo1 divHijo2 divHijo3";
-  /*margin-top: 30px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-items: center;*/ }
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  grid-gap: 10px; }
 
-.divHijo1 {
-  grid-area: divHijo1; }
+.divHijo {
+  position: relative; }
 
-.divHijo2 {
-  grid-area: divHijo2; }
+.gallery_img {
+  width: 100%;
+  height: 570px;
+  object-fit: cover; }
 
-.divHijo3 {
-  grid-area: divHijo3; }
+.gallery_title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), black);
+  width: 100%;
+  margin: 0;
+  padding: 50px;
+  font-family: Fira Sans, sans-serif;
+  font-size: 44px; }
 
-h2 {
-  color: #891bb3;
-  font-family: 'Rubik', sans-serif; }
+@media (max-width: 768px) {
+  .divPadre {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px; }
+  main {
+    width: 100%;
+    height: 2900px; }
+  .redes {
+    background-color: #212529;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px; } }
 
-#itemProgramas {
-  text-align: center; }
+@media (max-width: 768px) {
+  .stein {
+    height: 1200px; } }
+
+.fotosServicios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  grid-gap: 10px; }
+
+.exper {
+  position: relative; }
+
+.gallery_img2 {
+  width: 100%;
+  height: 570px;
+  object-fit: cover; }
+
+.gallery_title2 {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), black);
+  width: 100%;
+  margin: 0;
+  padding: 50px;
+  font-family: Fira Sans, sans-serif;
+  font-size: 35px; }
+
+@media (max-width: 1024px) {
+  .fotosServicios {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px; }
+  .tours {
+    width: 100%;
+    height: 2330px; } }
 
 td {
   color: purple; }
-
-#cajonDelMaipo {
-  width: 500px;
-  height: 400px; }
-
-#pucon {
-  width: 500px;
-  height: 400px; }
-
-#tresTazas {
-  width: 500px;
-  height: 400px; }
 
 p {
   color: black;
@@ -155,41 +143,54 @@ td {
   font-size: 20px; }
 
 .barraTabla {
-  color: white;
+  color: #DBDBDB;
   font-size: 25px; }
 
 form {
   width: 800px; }
-
-#cabalgata {
-  width: 800px;
-  height: 500px; }
-
-#trekking {
-  width: 800px;
-  height: 500px; }
-
-.fotosServicios {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
 
 .logoBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
 
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 50px; }
+
+.soocial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.redes {
+  background-color: #212529;
+  height: 300px;
+  margin: 0px;
+  padding: 0px; }
+
+.siguenos {
+  color: #198754;
+  font-size: 14px;
+  font-family: Fira Sans, sans-serif;
+  height: 30px; }
+
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 footer {
   width: 100%;
   height: 500px;
-  background-image: linear-gradient(to left, #4d6e56, green, #4d6e56); }
+  background-color: black; }
 
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 30px;
-  height: 50px; }
+  flex-direction: row; }
 
 .redes {
   display: flex;
@@ -197,10 +198,10 @@ footer {
   justify-content: center; }
 
 .formulario {
-  color: white; }
+  color: #DBDBDB; }
 
 label {
-  color: white; }
+  color: #DBDBDB; }
 
 .formularioContacto {
   width: 1000px; }

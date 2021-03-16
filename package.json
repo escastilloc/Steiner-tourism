@@ -14,5 +14,13 @@
     "nodemon": "^2.0.7"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escastilloc/Steiner-tourism.git"
+  },
+  "bugs": {
+    "url": "https://github.com/escastilloc/Steiner-tourism/issues"
+  },
+  "homepage": "https://github.com/escastilloc/Steiner-tourism#readme",
   "description": ""
 }

@@ -1,82 +1,8 @@
-header{
-	width: 100%;
-	height: 500px;
+
+.navbar1{
+	height: 62px;
 }
-.menuPadre {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
+
+.navbar2{
 	background-color: black;
-	height: 70px;
-	/*margin: 0px;*/
-	
-	
-}
-
-.padreNavegacion {
-	display: flex;
-	flex-direction: row;
-	width: 1000px;
-	justify-content: space-between;
-	margin-right: 20px;
-	font-size: 30px;
-
-}
-
-.barraNavegacion{
-	background-image: url(https://www.ecochile.travel/wp-content/uploads/2017/03/1000x400-slide_banner1-A.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-}
-
-
-
-li a{
-	list-style: none;
-	font-family: 'Pirata One', cursive;
-	color: $color-principal;
-	text-decoration: none;
-
-}
-
-
-ul{
-	list-style: none;
-	margin-left: 20px;
-	font-family: 'Pirata One', cursive;
-	color: $color-principal;
-	text-decoration: none;
-
-}
-
-.navegacion li ul li  {
-	display: none;
-}
-
-.navegacion li:hover ul li {
-	display: block;
-}
-
-.navegacion li:hover {
-	background-color: $color-parrafo-secundaria;
-	color: $color-secundaria;
-
-}
-
-.navegacion li a:hover {
-	background-color: $color-parrafo-secundaria;
-	color: $color-secundaria;
-	text-decoration: none;
-}
-
-.hijoNavegacion ul {
-	padding: 0px;
-	z-index: 1;
-	position: absolute;
-}
-
-
-#logo{
-	width: 300px;
 }
